@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math quiz</title>
+<style>
+#output{
+background:white;
+border-radius:8px;
+border-top:8px solid #4260f5;
+padding:10px;
+float:none;
+text-align:left;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+
+</head>
+<body>
+	<h4 id="NameP1"></h4><span id="P1SCORE"></span>
+	<br>
+	<h4 id="NameP2"></h4><span id="P2SCORE"></span>
+
+	<div class = "container"></div>
+<center>
+<h1>The Math Quiz</h1>
+<h4 id="Question"></h4>
+<br>
+<h4 id="Answer"></h4>
+<br>
+<div id="output" class="col-lg-6" style="width:20%;background:white;border-radius:8px;border-top:8px solid #4260f5;padding:10px;float:none;text-align:left;"></div>
+
+<h3>Number 1</h1>
+<input id="Int1" type = "number" style="border-radius:6px; width:30%;">
+
+<h3>Number 2</h1>
+<input id="Int2" type = "number" style="border-radius:6px; width:30%;">
+
+<br>
+<br>
+
+<button id="sendMath" onclick="sendMathIntegers()" class="btn btn-success" style="width:25%; color:black; font-size: large;">Input it in</button>
+</center>
+<script src="game_page.js"></script>
+</body>
+</html>
